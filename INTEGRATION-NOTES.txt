@@ -1,0 +1,24 @@
+TYAC site integration notes
+===========================
+
+Keep these files in the same project folder:
+- index.html
+- events.html
+- events.js
+- script.js
+- style.css
+- server.js
+- schema.sql
+
+events.html loads the shared site script (script.js) and page-specific events
+script (events.js) with defer, so the page elements exist before the events
+script runs. It uses the shared stylesheet and includes event-specific styles.
+Navigation links to index.html and youth.html#signup.
+
+Birthday reminders still use this browser's localStorage. They are not connected
+to PostgreSQL/server.js. The provided schema has no birthday/events table, so
+shared persistent storage requires a separate database/API feature. Keep
+youth.html and yac.jpg alongside these files if used by your existing site.
+
+Run through the existing Node/Express server (with dependencies and environment
+configured) rather than opening events.html directly for same-origin API access.

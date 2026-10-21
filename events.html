@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youth and volunteer hub of The Youth Alliance For Change (TYAC): stories from young members, the roles volunteers actually do, and a sign-up form to join the next campaign in Montserrado County, Liberia.">
+    <meta name="theme-color" content="#F2F0ED">
+    <title>Youth &amp; Volunteers | The Youth Alliance For Change (TYAC)</title>
+    <link rel="icon" type="image/jpeg" href="yac.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7">
+    <script src="script.js" defer></script>
+    <script src="events.js" defer></script>
+</head>
+
+    <body>
+        
+  <!-- GLOBAL HEADER & NAVIGATION -->
+    <header class="site-header">
+        <div class="wrap header-flex">
+            <a href="index.html" class="brand">
+                <span class="brand__plate">
+                    <img src="yac.jpg" alt="The Youth Alliance For Change crest" class="brand__mark">
+                </span>
+                <span class="brand__text">
+                    <span class="brand__name">The Youth Alliance For Change</span>
+                    <span class="brand__meta">Est. 2025 — Monrovia, Liberia</span>
+                </span>
+            </a>
+            <nav class="nav-bar" aria-label="Primary">
+                <ul class="nav-links" role="list">
+                    <li><a href="index.html" class="nav-link" data-cursor="HOME">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-cursor="ABOUT">About Us</a></li>
+                    <li><a href="index.html#blog" class="nav-link" data-cursor="BLOG">Blog</a></li>
+                    <li><a href="events.html" class="nav-link is-active" aria-current="page" data-cursor="EVENTS">Events &amp; Celebration</a></li>
+                    <li><a href="youth.html" class="nav-link" data-cursor="YOUTH">Youth</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-cursor="CONTACT">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="youth.html#signup" class="btn btn--ghost nav-cta" data-cursor="JOIN">Get Involved</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero"><p class="eyebrow">REMEMBER • APPRECIATE • CELEBRATE</p>
+            <h1>Our journey. <span>Our people.</span></h1><p>A special space to celebrate TYAC's founding anniversary and appreciate the people who make our work possible.</p>
+        </section>
+
+        <section class="section"><div class="anniversary-panel"><div class="anniversary-copy"><p class="eyebrow">OUR FOUNDING ANNIVERSARY</p>
+            <h2 id="anniversary-title">Celebrating our journey</h2><p id="anniversary-message">Founded on August 4, 2025, TYAC grows through the commitment of young people, volunteers, partners, and supporters.</p>
+            <div class="countdown" id="anniversary-countdown" aria-live="polite"><div><strong data-days>—</strong><span>Days</span>
+            </div><div><strong data-hours>—</strong><span>Hours</span></div>
+            <div><strong data-minutes>—</strong><span>Minutes</span></div>
+            
+            <div><strong data-seconds>—</strong><span>Seconds</span></div>
+        </div>
+
+        <p class="countdown-label" id="countdown-label">Until our next anniversary — August 4</p>
+    </div>
+
+    <div class="anniversary-badge"><span>TYAC</span><strong id="anniversary-age">1+</strong><small>YEARS OF<br>COMMUNITY ACTION</small>
+        <div class="badge-star">✦</div>
+    </div>
+
+</div>
+</section>
+
+
+<section class="section section-light"><div class="section-heading"><p class="eyebrow">CELEBRATE OUR PEOPLE</p>
+    <h2>Member birthday reminders</h2><p>This demo stores birthday records in this browser only. Do not enter personal details on a shared/public computer. Use the secure backend described in README for real member records.</p>
+</div>
+
+<div class="birthday-layout"><div class="birthday-form-card"><h3>Add a birthday reminder</h3>
+    <form id="birthday-form"><label for="birthday-name">Member display name</label>
+        <input id="birthday-name" name="name" required maxlength="80" placeholder="e.g. Alex K." autocomplete="off"><label for="birthday-date">Birthday (month and day)</label>
+        <input id="birthday-date" name="date" type="date" required><label class="checkbox-row"><input id="birthday-public" type="checkbox"> Member agrees to show this reminder on this device</label>
+        <button class="button button-primary" type="submit">Save Reminder</button>
+        <p class="form-note">For privacy, use only records you have permission to store. This local demo does not send email.</p>
+    </form>
+</div>
+
+<div class="birthday-list-card"><div class="list-heading"><div><h3>Upcoming birthdays</h3>
+    <p>Sorted by the next birthday date.</p></div><span class="count-pill" id="birthday-count">0</span></div>
+    <div id="birthday-list" class="birthday-list"><div class="empty-state">No birthdays saved on this device yet.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section"><div class="section-heading"><p class="eyebrow">MILESTONES</p>
+    <h2>Every year is another opportunity to grow</h2><p>Update this timeline as TYAC completes projects and reaches new milestones.</p>
+</div>
+
+<div class="timeline"><div><span>2025</span><h3>TYAC founded</h3><p>August 4 marked the beginning of our shared journey.</p>
+</div>
+
+<div><span>ONGOING</span><h3>Building community</h3><p>Continue adding verified activities, partnerships, and achievements here.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="footer-bottom">
+    <span>© <span data-year></span> The Youth Alliance For Change.</span>
+    <a href="mailto:theyouthallianceforchange@gmail.com">theyouthallianceforchange@gmail.com</a>
+</div>
+</footer>
+</body>
+</html>
